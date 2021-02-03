@@ -1,0 +1,19 @@
+.places {
+    position: relative;
+    width: 87.5%;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+.places__wrapper {
+    width: 357px;
+}
+
+.places__header {
+    @include font(montserrat, 600, 55px, 80px);
+}
+
+.places__description {
+    @include font(montserrat, 400, 16px, 28px);
+    color: $special-black;
+}

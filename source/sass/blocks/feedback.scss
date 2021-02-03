@@ -1,0 +1,23 @@
+.feedback {
+    position: absolute;
+    left: 849px;
+    top: 114px;
+    z-index: 100;
+    width: 382px;
+    height: 367px;
+    background-color: white;
+    padding: 20px;
+}
+
+.feedback__header {
+    @include font(montserrat, 500, 30px, 37px);
+}
+
+.feedback__description {
+    @include font(montserrat, 400, 14px, 28px);
+    color: $special-black;
+}
+
+.feedback__author {
+    @include font(montserrat, 500, 16px, 20px);
+}

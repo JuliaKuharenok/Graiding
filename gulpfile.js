@@ -75,7 +75,7 @@ const watcher = () => {
 }
 
 exports.default = gulp.series(
-  styles, scripts, server, watcher
+  styles, server, watcher
 );
 
 // Images
@@ -140,8 +140,6 @@ const build = gulp.series(
       clean,
       copy,
       styles,
-      scripts,
-      sprite,
       html
 );
 

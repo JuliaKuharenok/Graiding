@@ -1,0 +1,50 @@
+.countries {
+    position: relative;
+    width: 87.5%;
+    margin: 0 auto;
+    padding: 0; 
+}
+
+.countries__wrapper {
+    width: 899px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 100px;
+    height: 596px;
+}
+
+.countries__header {
+    @include font(montserrat, 600, 55px, 90px);
+}
+
+.countries__description {
+    @include font(montserrat, 400, 16px, 28px);
+    color: $special-black; 
+}
+
+.countries__buy-button {
+    @include font(montserrat, 700, 12px, 15px);
+    color: $basic-white;
+    background-color: $basic-pink;
+    border: none;
+    padding: 30px 40px;   
+}
+
+.img {
+   width: 430px;
+   background-color: lightblue; 
+}
+
+.countries__list {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 899px;
+}
+
+.countries__item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}

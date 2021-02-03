@@ -1,0 +1,24 @@
+.options {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 100px;
+}
+
+.options__item {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    height: 430px;
+    background-color: lightskyblue;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.options__item p {
+    background-color: white;
+    margin: 0;
+    @include font(montserrat, 500, 24px, 30px);
+    padding: 17px 60px;
+}

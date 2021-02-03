@@ -1,0 +1,30 @@
+.tour {
+    background-color: lightseagreen;
+    height: 860px;
+    color: $basic-white;
+}
+
+.tour__wrapper {
+    width: 333px;
+    margin-left: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.tour__header {
+    @include font(montserrat, 600, 55px, 80px);
+}
+
+.tour__description {
+    @include font(montserrat, 400, 16px, 27px);
+}
+
+.tour__tour-selection {
+    @include font(montserrat, 700, 12px, 15px);
+    color: $basic-white;
+    text-align: left;
+    background-color: $basic-pink;
+    border: none;
+    padding: 30px;
+    flex-grow: 1;
+}
