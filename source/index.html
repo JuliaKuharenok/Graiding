@@ -12,9 +12,9 @@
                 <a class="header__logo"><img src="" alt="Логотип Way"></a>
                 <nav class="header__navigation navigation">
                     <ul class="navigation__list">
-                        <li class="navigation__item"><a>О путешествии</a></li>
-                        <li class="navigation__item"><a>Цены</a></li>
-                        <li class="navigation__item"><a>+7 (499) -784-684-46</a></li>
+                        <li class="navigation__nav-item nav-item"><a>О путешествии</a></li>
+                        <li class="navigation__nav-item nav-item"><a>Цены</a></li>
+                        <li class="navigation__nav-item nav-item nav-item--phone"><a>+7 (499) -784-684-46</a></li>
                     </ul>
                 </nav>
             </div>
@@ -60,8 +60,7 @@
                 <div class="countries__feedback feedback">
                     <h3 class="feedback__header">Отзывы</h3>
                     <p class="feedback__description">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света! </p>
-                    <img src="" alt="Аватар пользователя">
-                    <p class="feedback__author">Влада Голицина</p>
+                    <p class="feedback__author"><img src="" alt="Аватар пользователя">Влада Голицина</p>
                 </div>
                 <div class="counries__wrapper visually-hidden">
                     <h2 class="counries__header">Албания</h2>
@@ -105,13 +104,17 @@
                 </div>
             </section>
             <section class="main__prices prices">
-                <h2 class="prices__header"></h2>
-                <p class="prices__description"></p>
-                <p class="prices__contacts"></p>
-                <ul class="prices__tarif tarif">
-                    <li class="tarif__full">
-                        <p class="tarif__header"><Комплексный/p>
-                        <p class="tarif__price">$1999</p>
+                <div class="prices__wrapper">
+                    <h2 class="prices__header">Цены</h2>
+                    <p class="prices__description">Специально для Вас  мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%! </p>
+                    <p class="prices__contacts">Свяжитесь с нами <a>+7 (499) -784-684-46</a></p>
+                </div>
+                <ul class="prices__list list">
+                    <li class="list__tarif tarif tarif--full">
+                        <div class="tarif__wrapper">
+                            <p class="tarif__header">Комплексный</p>
+                            <p class="tarif__price">$1999</p>
+                        </div>
                         <p class="tarif__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
                         <ul class="tarif__features features">
                             <li class="features__item">Разработанный маршрут с гидом группы</li>
@@ -121,9 +124,11 @@
                         </ul>
                         <button class="tarif__buy-button">Купить тур сейчас</button>
                     </li>
-                    <li class="tarif__econom">
-                        <p class="tarif__header">Экономный</p>
-                        <p class="tarif__price">$1399</p>
+                    <li class="list__tarif tarif tarif--econom">
+                        <div class="tarif__wrapper">
+                            <p class="tarif__header">Экономный</p>
+                            <p class="tarif__price">$1399</p>
+                        </div>
                         <p class="tarif__description">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
                         <ul class="tarif__features features">
                             <li class="features__item">Разработанный маршрут с гидом группы</li>
@@ -137,14 +142,17 @@
                 </ul>
             </section>
             <section class="main__questions questions">
+                <div class="image"></div>
                 <div class="questions__wrapper">
-                    <p>У Вас остались вопросы?</p>
+                    <p class="questions__header">У Вас остались вопросы?</p>
                     <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
                     <form class="questions__form">
-                        <label></label>
-                        <input placeholder="+7 Введите 10 цифр номера"></input>
-                        <label></label>
-                        <input placeholder="E-mail"></input>
+                        <div class="questions__container">
+                            <label></label>
+                            <input placeholder="+7 Введите 10 цифр номера"></input>
+                            <label></label>
+                            <input placeholder="E-mail"></input>
+                        </div>
                         <button>Отправить</button>
                     </form>
                 </div>

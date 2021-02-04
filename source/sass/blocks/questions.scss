@@ -1,0 +1,48 @@
+.questions {
+    position: relative;
+    width: 59.5%;
+    margin: 0 auto;
+    padding: 0;
+    margin-top: 64px;
+}
+
+.image {
+    width: 844px;
+    height: 455px;
+    background-color: lightcoral;
+}
+
+.questions__wrapper {
+    position: absolute;
+    left: 511px;
+    top: 70px;
+    z-index: 100;
+    padding-top: 50px;
+    width: 656px;
+    height: 315px;
+    background-color: $basic-white;
+}
+
+.questions__header {
+    @include font(600, 25px, 32px, $basic-black);
+    text-align: center;
+    margin: 0;
+}
+
+.questions__form {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border: 1px solid rgba(44, 46, 63, 0.3);
+    @include font(400, 14px, 17px, $basic-black);
+}
+
+input::placeholder {
+    @include font(400, 14px, 17px, $basic-black);
+}
+
+.questions button {
+    @include font(700, 12px, 15px, $basic-white);
+}

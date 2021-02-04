@@ -2,6 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 100px;
+    column-gap: 5%;
+    padding: 0;
+    margin: 0;
 }
 
 .options__item {
@@ -17,8 +20,8 @@
 }
 
 .options__item p {
-    background-color: white;
+    background-color: $basic-white;
     margin: 0;
-    @include font(montserrat, 500, 24px, 30px);
-    padding: 17px 60px;
+    @include font(500, 24px, 30px, $special-black);
+    padding: 16px 34px;
 }

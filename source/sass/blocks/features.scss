@@ -1,0 +1,11 @@
+.features {
+    @include font(400, 16px, 32px, $special-black);
+    list-style: none;
+    padding: 0;
+    padding-left: 33px;
+    margin-bottom: 55px;
+}
+
+.features__item {
+    margin-bottom: 11px;
+}

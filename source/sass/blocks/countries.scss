@@ -1,29 +1,36 @@
 .countries {
     position: relative;
-    width: 87.5%;
+    width: 61%;
     margin: 0 auto;
-    padding: 0; 
+    padding: 0;
+    margin-top: 98px; 
 }
 
 .countries__wrapper {
     width: 899px;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 100px;
+    column-gap: 9%;
     height: 596px;
+    margin-top: 80px;
 }
 
 .countries__header {
-    @include font(montserrat, 600, 55px, 90px);
+    @include font(600, 55px, 90px, $special-black);
+    margin: 0;
+    margin-bottom: 49px;
+    margin-top: 10px;
 }
 
 .countries__description {
-    @include font(montserrat, 400, 16px, 28px);
-    color: $special-black; 
+    @include font(400, 16px, 28px, $special-black);
+    opacity: 0.7; 
+    margin: 0;
+    margin-bottom: 48px;
 }
 
 .countries__buy-button {
-    @include font(montserrat, 700, 12px, 15px);
+    @include font(700, 12px, 15px, $basic-white);
     color: $basic-white;
     background-color: $basic-pink;
     border: none;
@@ -37,13 +44,17 @@
 
 .countries__list {
     padding: 0;
+    padding-bottom: 14px;
     margin: 0;
     display: flex;
     justify-content: space-between;
-    width: 899px;
+    width: 77%;
+    border-bottom: 1px solid rgba(44, 46, 63, 0.3);
 }
 
 .countries__item {
+    @include font(500, 20px, 24px, $special-black);
+    opacity: 30%;
     list-style: none;
     padding: 0;
     margin: 0;

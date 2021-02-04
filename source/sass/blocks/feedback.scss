@@ -1,23 +1,28 @@
 .feedback {
     position: absolute;
-    left: 849px;
-    top: 114px;
+    left: 789px;
+    top: 217px;
     z-index: 100;
-    width: 382px;
-    height: 367px;
     background-color: white;
-    padding: 20px;
+    padding-top: 46px;
+    padding-left: 28px;
+    padding-right: 16px;
+    padding-bottom: 22px;
 }
 
 .feedback__header {
-    @include font(montserrat, 500, 30px, 37px);
+    @include font(500, 30px, 37px, $special-black);
+    margin: 0;
+    margin-bottom: 33px;
 }
 
 .feedback__description {
-    @include font(montserrat, 400, 14px, 28px);
-    color: $special-black;
+    @include font(400, 14px, 28px, $special-black);
+    opacity: 0.3;
+    margin: 0;
+    margin-bottom: 41px;
 }
 
 .feedback__author {
-    @include font(montserrat, 500, 16px, 20px);
+    @include font(500, 16px, 20px, $special-black);
 }

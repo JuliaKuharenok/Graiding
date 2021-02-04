@@ -1,0 +1,40 @@
+.prices {
+    position: relative;
+    width: 61.5%;
+    margin: 0 auto;
+    margin-top: 239px;
+    padding: 0; 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    column-gap: 17.5%;
+}
+
+.prices__wrapper {
+    order: 1;
+}
+
+.prices__header {
+    @include font(600, 55px, 90px, $special-black);
+    margin: 0;
+    margin-top: 113px;
+}
+
+.prices__description {
+    @include font(400, 16px, 27px, $special-black);
+    opacity: 0.7;
+    margin: 0;
+    margin-top: 46px;
+    margin-bottom: 62px;
+}
+
+.prices__contacts {
+    @include font(500, 22px, 34px, $basic-black);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin-left: 49px;
+        & a {
+            @include font(400, 20px, 32px, $basic-black);
+            margin-top: 12px;
+        }
+}
