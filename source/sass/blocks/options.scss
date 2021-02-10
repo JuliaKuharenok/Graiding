@@ -3,25 +3,47 @@
     grid-template-columns: 1fr 1fr 1fr;
     row-gap: 100px;
     column-gap: 5%;
+    align-content: space-around;
     padding: 0;
     margin: 0;
 }
 
-.options__item {
+.options__options-item {
     list-style: none;
     padding: 0;
     margin: 0;
-    width: 350px;
     height: 430px;
-    background-color: lightskyblue;
     display: flex;
     align-items: flex-end;
     justify-content: center;
 }
 
-.options__item p {
+.options__options-item p {
     background-color: $basic-white;
     margin: 0;
     @include font(500, 24px, 30px, $special-black);
     padding: 16px 34px;
+}
+
+@media (max-width: $desktop-width) {
+    .options {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 24px;
+    }
+
+    .options__options-item {
+        height: 425px;
+        max-width: 288px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .options {
+        grid-template-columns: 1fr;
+    }
+
+    .options__options-item {
+        width: 100%;
+        margin: 0 auto;
+    }
 }

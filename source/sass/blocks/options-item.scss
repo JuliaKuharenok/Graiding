@@ -1,0 +1,62 @@
+.options-item {
+    &--greece {
+        background-image: url(../img/greece-desktop.png);
+        background-repeat: no-repeat;
+    }
+    &--albany {
+        background-image: url(../img/albany-desktop.png);
+        background-repeat: no-repeat;
+    }
+    &--macedonia {
+        background-image: url(../img/macedonia-desktop.png);
+        background-repeat: no-repeat;
+    }
+    &--montenegro {
+        background-image: url(../img/montenegro-desktop.png);
+        background-repeat: no-repeat;
+    }
+    &--croatia {
+        background-image: url(../img/croatia-desktop.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@media (max-width: $desktop-width) {
+    .options-item {
+        &--greece {
+            background-image: url(../img/greece-tablet.png);
+        }
+        &--albany {
+            background-image: url(../img/albany-tablet.png);
+        }
+        &--macedonia {
+            background-image: url(../img/macedonia-tablet.png);
+        }
+        &--montenegro {
+            background-image: url(../img/montenegro-tablet.png);
+        }
+        &--croatia {
+            background-image: url(../img/croatia-tablet.png);
+        }
+    }   
+}
+
+@media (max-width: $tablet-width) {
+    .options-item {
+        &--greece {
+            background-image: url(../img/greece-mobile.png);
+        }
+        &--albany {
+            background-image: url(../img/albany-mobile.png);
+        }
+        &--macedonia {
+            background-image: url(../img/macedonia-mobile.png);
+        }
+        &--montenegro {
+            background-image: url(../img/montenegro-mobile.png);
+        }
+        &--croatia {
+            background-image: url(../img/croatia-mobile.png);
+        }
+    }  
+}

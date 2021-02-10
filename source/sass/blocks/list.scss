@@ -1,8 +1,26 @@
 .list {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 14%;
+    column-gap: 2%;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: $desktop-width) {
+    .list {
+        column-gap: 8%;
+        margin-top: 28px;
+        margin-left: 64px;
+        margin-right: 76px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .list {
+        grid-template-columns: 1fr;
+        row-gap: 40px; 
+        margin-left: 0;
+        margin-right: 0;
+    }
 }
 

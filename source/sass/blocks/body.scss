@@ -7,6 +7,11 @@
     grid-template-rows: min-content 1fr min-content;
     align-content: start;
 }
+
+.body__main {
+    //width: 61.5%;
+    margin: 0 auto;
+}
   
 .visually-hidden {
     position: absolute;
@@ -27,4 +32,21 @@ button {
     letter-spacing: 2px;
     background-color: $basic-pink;
     border: none;
+        &:hover,
+        &:focus,
+        &:active {
+            background-color: $special-pink;
+        }
+}
+
+@media (max-width: $desktop-width) {
+    .body__main {
+        //width: 83%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .body__main {
+        //width: 46%;
+    }
 }

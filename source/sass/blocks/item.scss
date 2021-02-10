@@ -2,3 +2,16 @@
     color: $basic-pink;
     opacity: 1;
 }
+
+@media (max-width: $desktop-width) {
+    .item--croatia {
+        display: none;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .item--montenegro,
+    .item--macedonia {
+        display: none;
+    }
+}

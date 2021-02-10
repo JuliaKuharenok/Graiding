@@ -3,13 +3,17 @@
     padding: 0;
     padding-top: 40px;
     padding-left: 29px;
-    padding-right: 39px;
+    padding-right: 29px;
     padding-bottom: 23px;
+    height: 607px;
     margin: 0;
     border: 1px solid rgba(44, 46, 63, 0.3);
     border-radius: 6px;
         &--full {
             border: 3px solid $basic-pink;
+        }
+        &--econom {
+            padding-bottom: 27px;
         }
 }
 
@@ -44,11 +48,74 @@
     margin-top: 40px;
     margin-bottom: 59px;
     padding-right: 24px;
+    position: relative;
+        .tarif--full &::after {
+            content: "";
+            position: absolute;
+            top: 76px;
+            left: 0px;
+            background-color: $basic-pink;
+            width: 100%;
+            height: 1px;
+        }
+}
+
+.tarif--econom .tarif__description::after {
+    content: "";
+    position: absolute;
+    top: 76px;
+    left: 0px;
+    background-color: $special-black;
+    opacity: 0.5;
+    width: 100%;
+    height: 1px;
 }
 
 .tarif__buy-button {
     @include font(700, 12px, 15px, $basic-white);
-    padding: 30px 40px; 
+    padding: 30px 60px; 
+}
+
+@media (max-width: $desktop-width) {
+    .tarif {
+        padding: 0;
+        padding-top: 29px;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 0;
+        width: 284px;
+        height: 601px;
+    }
+
+    .tarif__wrapper {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .tarif__header {
+        @include font(600, 24px, 34px, $basic-black);
+        margin-bottom: 10px;
+    }
+
+    .tarif__description {
+        text-align: center;
+        padding-left: 13px;
+        padding-right: 13px;
+        margin-top: 12px;
+        margin-bottom: 29px;
+    }
+
+    .tarif__buy-button {
+        @include font(500, 10px, 12px, $basic-white);
+        padding: 22px 68px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .tarif {
+        margin: 0 auto;
+    }
 }
 
 

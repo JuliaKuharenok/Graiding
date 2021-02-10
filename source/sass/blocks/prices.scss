@@ -6,7 +6,7 @@
     padding: 0; 
     display: grid;
     grid-template-columns: 2fr 1fr;
-    column-gap: 17.5%;
+    column-gap: 5.5%;
 }
 
 .prices__wrapper {
@@ -17,6 +17,16 @@
     @include font(600, 55px, 90px, $special-black);
     margin: 0;
     margin-top: 113px;
+    position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 102px;
+            left: 0;
+            background-color: $basic-pink;
+            width: 175px;
+            height: 3px;
+        }
 }
 
 .prices__description {
@@ -36,5 +46,69 @@
         & a {
             @include font(400, 20px, 32px, $basic-black);
             margin-top: 12px;
+            position: relative;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    left: -37px;
+                    background-image: url(../img/phone-red.svg);
+                    width: 30px;
+                    height: 30px; 
+                }
         }
+}
+
+
+
+@media (max-width: $desktop-width) {
+    .prices {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-top: 111px;
+    }
+
+    .prices__wrapper {
+        order: 0;
+        text-align: center;
+    }
+
+    .prices__header {
+        @include font(600, 30px, 45px, $special-black);
+        margin-top: 0;
+            &::before {
+                display: none;
+            }
+    }
+
+    .prices__description {
+        @include font(400, 16px, 27px, $special-black);
+        margin-top: 20px;
+        margin-left: 17px;
+        margin-bottom: 32px;
+        width: 725px;
+    }
+
+    .prices__contacts {
+        @include font(500, 18px, 34px, $special-black);
+        margin-left: 0;
+            & a {
+                @include font(400, 18px, 32px, $basic-pink);
+                text-decoration: underline;
+                    &::before {
+                        display: none;
+                    }
+            }
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .prices {
+        width: 63%;
+    }
+
+    .prices__description {
+        width: auto;
+    }
 }

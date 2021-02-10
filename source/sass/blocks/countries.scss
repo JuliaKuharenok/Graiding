@@ -1,15 +1,14 @@
 .countries {
     position: relative;
-    width: 61%;
+    width: 61.5%;
     margin: 0 auto;
     padding: 0;
     margin-top: 98px; 
 }
 
 .countries__wrapper {
-    width: 899px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     column-gap: 9%;
     height: 596px;
     margin-top: 80px;
@@ -20,6 +19,16 @@
     margin: 0;
     margin-bottom: 49px;
     margin-top: 10px;
+    position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 102px;
+            width: 175px;
+            height: 3px;
+            background-color: $basic-pink;
+        }
 }
 
 .countries__description {
@@ -37,9 +46,11 @@
     padding: 30px 40px;   
 }
 
-.img {
-   width: 430px;
-   background-color: lightblue; 
+.countries__background {
+    width: 62%;
+    height: 596px;
+    background-image: url(../img/option-greece-desktop.png);
+    background-repeat: no-repeat; 
 }
 
 .countries__list {
@@ -58,4 +69,76 @@
     list-style: none;
     padding: 0;
     margin: 0;
+}
+
+@media (max-width: $desktop-width) {
+    .countries {
+        width: 100%;
+    }
+
+    .countries__list {
+        width: 92%;
+        margin-left: 37px;
+    }
+
+    .countries__wrapper {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    .countries__container {
+        width: 79%;
+        margin: 0 auto;
+    }
+
+    .countries__header {
+        @include font(600, 30px, 45px, $special-black);
+        margin-bottom: 21px;
+            &::before {
+                display: none;
+            }
+    }
+
+    .countries__description {
+        @include font(400, 16px, 28px, $special-black);
+        margin-bottom: 19px;
+    }
+
+    .countries__buy-button {
+        @include font(500, 10px, 12px, $basic-white);
+        padding: 20px 52px; 
+        margin-bottom: 28px;
+    }
+
+    .countries__background {
+        height: 416px;
+        width: 100%;
+        background-image: url(../img/option-greece-tablet.png);
+        background-position: 50% 0%;
+        background-color: #6C9CC1; 
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .countries__header {
+        @include font(600, 24px, 36px, $special-black);
+    }
+
+    .countries__container {
+        width: 63%;
+    }
+
+    .countries__list {
+        width: 64%;
+        margin: 0 auto;
+    }
+
+    .countries__background {
+        height: 415px;
+        background-image: url(../img/option-greece-mobile.png);
+        position: relative;
+    }
 }

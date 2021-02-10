@@ -1,5 +1,25 @@
+.next-trips__header {
+    @include font(600, 18px, 32px, $basic-black);
+    margin: 0;
+    margin-bottom: 21px;
+}
+
 .next-trips__list {
+    @include font(400, 14px, 17px, $basic-black);
+    opacity: 0.5;
     list-style: none;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    margin: 0;
+    padding: 0;
+}
+
+.next-trips__item {
+    padding-bottom: 10px;
+}
+
+@media (max-width: $tablet-width) {
+    .next-trips__list {
+        grid-template-columns: 1fr 1fr;
+    }
 }

@@ -1,8 +1,25 @@
 .footer {
     position: relative;
-    width: 87.5%;
+    width: 61.5%;
     margin: 0 auto;
+    margin-top: 170px;
     padding: 0;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (max-width: $desktop-width) {
+    .footer {
+        margin-top: 80px; 
+        grid-template-columns: 1fr 1fr;
+        width: 83%;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .footer {
+        margin-top: 450px;
+        width: 46%;
+        grid-template-columns: 1fr;
+    }
 }

@@ -1,6 +1,6 @@
 .header {
     position: relative;
-    width: 59.5%;
+    width: 61.5%;
     margin: 0 auto;
     margin-top: 36px;
     margin-bottom: 31px;
@@ -10,4 +10,20 @@
 .header__wrapper {
     display: flex;
     justify-content: space-between;
+}
+
+@media (max-width: $desktop-width) {
+    .header {
+        width: 90%;
+        margin-top: 16px;
+        margin-bottom: 2px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+        width: 63%;
+        margin-top: 13px;
+        margin-bottom: 5px;
+    }
 }

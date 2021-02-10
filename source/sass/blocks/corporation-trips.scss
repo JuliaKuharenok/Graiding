@@ -1,0 +1,22 @@
+.corporation-trips {
+    margin-left: 61px;
+}
+
+.corporation-trips__header {
+    @include font(600, 18px, 32px, $basic-black);
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.corporation-trips__description {
+    @include font(400, 14px, 24px, $basic-black);
+    opacity: 0.5;
+    margin: 0;
+}
+
+@media (max-width: $desktop-width) {
+    .corporation-trips {
+        margin-top: 49px;
+        margin-left: 0;
+    }
+}

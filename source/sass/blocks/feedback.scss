@@ -1,6 +1,6 @@
 .feedback {
     position: absolute;
-    left: 789px;
+    left: 67%;
     top: 217px;
     z-index: 100;
     background-color: white;
@@ -14,6 +14,16 @@
     @include font(500, 30px, 37px, $special-black);
     margin: 0;
     margin-bottom: 33px;
+    position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 48px;
+            left: 0;
+            background-color: $basic-pink;
+            width: 68px;
+            height: 1px;
+    }
 }
 
 .feedback__description {
@@ -26,3 +36,32 @@
 .feedback__author {
     @include font(500, 16px, 20px, $special-black);
 }
+
+.feedback__author img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+@media (max-width: $desktop-width) {
+    .feedback {
+        left: 33%;
+        top: 488px;
+        padding-top: 29px;
+        padding-right: 16px;
+        width: 338px;
+        height: 336px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .feedback {
+        left: 3%;
+        top: 61%;
+        width: 268px;
+    }
+
+    .feedback__header {
+        @include font(500, 20px, 25px, $special-black);
+    }
+}
+

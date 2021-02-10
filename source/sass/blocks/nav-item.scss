@@ -7,5 +7,53 @@
             text-decoration: underline;
             padding-top: 0;
             padding-left: 94px;
+            position: relative;
         }
+        &--phone::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 61px;
+            background-image: url("../img/phone.svg");
+            width: 30px;
+            height: 30px;
+        }
+}
+
+.nav-item--phone:hover .nav-item--phone::before{
+    background-image: url("../img/phone-red.svg");
+}
+
+.nav-item a:hover,
+.nav-item a:focus,
+.nav-item a:active {
+    color: $special-pink;
+}
+
+@media (max-width: $desktop-width) {
+    .navigation--opened .nav-item {
+        background-color: #FBF8F8;
+        margin-top: 30px;
+        padding-top: 17px;
+        padding-bottom: 17px;
+        position: relative;
+            &--phone {
+                display: none;
+            }
+    }
+
+    .navigation--opened .nav-item::after {
+        content: "";
+        position: absolute;
+        top: 12px;
+        right: 2%;
+        background-image: url("../img/arrow.svg");
+        background-repeat: no-repeat;
+        width: 20px;
+        height: 23px;
+    }
+
+    .navigation--nojs .nav-item--phone {
+        display: none;
+    }
 }
